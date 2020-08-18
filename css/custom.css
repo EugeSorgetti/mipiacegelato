@@ -169,7 +169,7 @@ header.masthead {
 
 /*NOSOTROS*/
 .page-section {
-  padding: 6rem 0; }
+  padding: 3rem 0; }
 
 .page-section h2.section-heading {
   font-size: 2.5rem;
@@ -184,7 +184,9 @@ header.masthead {
 
 @media (min-width: 768px) {
   section {
-    padding: 9rem 0; } }
+    padding: 9rem 0; }
+  .page-section {
+  padding: 6rem 0; } }
 
 .text-center {
   text-align: center !important; }
@@ -209,8 +211,8 @@ header.masthead {
 
 .timeline > li {
   position: relative;
-  min-height: 50px;
-  margin-bottom: 50px; }
+  min-height: 80px;
+  margin-bottom: 75px; }
 
 
 .timeline > li:after {
@@ -218,7 +220,6 @@ header.masthead {
 
 .timeline > li .timeline-panel {
   position: relative;
-  float: right;
   width: 100%;
   padding: 0 20px 0 100px;
   text-align: left; }
@@ -282,7 +283,12 @@ header.masthead {
 
 .timeline .timeline-body > ul,
 .timeline .timeline-body > p {
-  margin-bottom: 0; }
+  margin-bottom: 30px; }
+
+  .text-muted {
+  color: #6c757d;
+  font-size: 12px;
+}
 
 @media (min-width: 768px) {
   .timeline:before {
@@ -293,13 +299,13 @@ header.masthead {
   .timeline > li .timeline-panel {
     float: left;
     width: 41%;
-    padding: 0 20px 20px 30px;
+    padding: 0 20px 50px 30px;
     text-align: right; }
   .timeline > li .timeline-image {
     left: 50%;
     width: 100px;
     height: 100px;
-    margin-left: -50px; }
+    margin-left: -50px;}
   .timeline > li .timeline-image h4 {
     font-size: 13px;
     line-height: 18px;
@@ -307,7 +313,11 @@ header.masthead {
   .timeline > li.timeline-inverted > .timeline-panel {
     float: right;
     padding: 0 30px 20px 20px;
-    text-align: left; } }
+    text-align: left; }
+  .text-muted {
+    color: #6c757d;
+    font-size: 14px;
+} }
 
 @media (min-width: 992px) {
   .timeline > li {
