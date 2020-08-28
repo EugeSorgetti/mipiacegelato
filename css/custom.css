@@ -167,9 +167,12 @@ header.masthead {
 .card-item {
   justify-content: space-around; }
 
+.svg-container {
+  width: 100%; }
+
 /*NOSOTROS*/
 .page-section {
-  padding: 3rem 0; }
+  padding: 6rem 0; }
 
 .page-section h2.section-heading {
   font-size: 2.5rem;
@@ -180,13 +183,12 @@ header.masthead {
   font-size: 1rem;
   font-weight: 400;
   font-style: italic;
+  font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   margin-bottom: 4rem; }
 
 @media (min-width: 768px) {
   section {
-    padding: 9rem 0; }
-  .page-section {
-  padding: 6rem 0; } }
+    padding: 9rem 0; } }
 
 .text-center {
   text-align: center !important; }
@@ -211,15 +213,19 @@ header.masthead {
 
 .timeline > li {
   position: relative;
-  min-height: 80px;
-  margin-bottom: 75px; }
+  min-height: 50px;
+  margin-bottom: 50px; }
 
+.timeline > li:after, .timeline > li:before {
+  display: table;
+  content: " "; }
 
 .timeline > li:after {
   clear: both; }
 
 .timeline > li .timeline-panel {
   position: relative;
+  float: right;
   width: 100%;
   padding: 0 20px 0 100px;
   text-align: left; }
@@ -283,12 +289,7 @@ header.masthead {
 
 .timeline .timeline-body > ul,
 .timeline .timeline-body > p {
-  margin-bottom: 30px; }
-
-  .text-muted {
-  color: #6c757d;
-  font-size: 12px;
-}
+  margin-bottom: 0; }
 
 @media (min-width: 768px) {
   .timeline:before {
@@ -299,13 +300,13 @@ header.masthead {
   .timeline > li .timeline-panel {
     float: left;
     width: 41%;
-    padding: 0 20px 50px 30px;
+    padding: 0 20px 20px 30px;
     text-align: right; }
   .timeline > li .timeline-image {
     left: 50%;
     width: 100px;
     height: 100px;
-    margin-left: -50px;}
+    margin-left: -50px; }
   .timeline > li .timeline-image h4 {
     font-size: 13px;
     line-height: 18px;
@@ -313,11 +314,7 @@ header.masthead {
   .timeline > li.timeline-inverted > .timeline-panel {
     float: right;
     padding: 0 30px 20px 20px;
-    text-align: left; }
-  .text-muted {
-    color: #6c757d;
-    font-size: 14px;
-} }
+    text-align: left; } }
 
 @media (min-width: 992px) {
   .timeline > li {
@@ -379,6 +376,10 @@ header.masthead {
   border-radius: 50px;
   padding: 50px;
   margin-top: 50px; }
+
+@media (max-width: 768px) {
+  .frutales {
+    margin-top: 0px; } }
 
 .chocolates {
   grid-area: chocolates;
